@@ -9,7 +9,10 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background: linear-gradient(to right, #f06b6b, #f0966b);
+      background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
     }
 
     .intro {
@@ -17,16 +20,23 @@
     }
 
     .expertise, .solution, .communication, .learning {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       display: flex;
       align-items: center;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
     }
 
-    .expertise i, .solution i, .communication i, .learning i {
-      font-size: 2em;
-      margin-right: 10px;
-      color: #3399ff;
+    .expertise img, .solution img, .communication img, .learning img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .expertise p, .solution p, .communication p, .learning p {
+      margin: 0;
+      font-size: 16px;
     }
 
     .contact {
@@ -36,13 +46,16 @@
 
     .contact a {
       text-decoration: none;
-      color: #333;
+      color: #fff;
       margin-right: 10px;
-      transition: transform 0.3s ease-in-out;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: background-color 0.3s ease-in-out;
     }
 
     .contact a:hover {
-      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.4);
     }
 
     .note {
@@ -79,29 +92,31 @@
   <section>
     <h2>Skills & Expertise</h2>
     <div class="expertise">
-      <i class="fas fa-laptop-code"></i> Technical Expertise: Skilled at solving complex problems across hardware, software, and network infrastructure.
+      <img src="https://cdn.pixabay.com/photo/2017/04/08/10/16/laptop-2161982_960_720.png" alt="Laptop Icon">
+      <p>Technical Expertise: Skilled at solving complex problems across hardware, software, and network infrastructure.</p>
     </div>
     <div class="solution">
-      <i class="fas fa-lightbulb"></i> Solution Delivery: Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.
+      <img src="https://cdn.pixabay.com/photo/2013/07/18/19/22/lightbulb-210584_960_720.png" alt="Lightbulb Icon">
+      <p>Solution Delivery: Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.</p>
     </div>
     <div class="communication">
-      <i class="fas fa-handshake"></i> Communication & Collaboration: Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.
+      <img src="https://cdn.pixabay.com/photo/2016/09/17/19/35/handshake-1678071_960_720.png" alt="Handshake Icon">
+      <p>Communication & Collaboration: Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.</p>
     </div>
     <div class="learning">
-      <i class="fas fa-graduation-cap"></i> Continuous Learning: Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.
+      <img src="https://cdn.pixabay.com/photo/2015/07/17/14/57/graduation-cap-769231_960_720.png" alt="Graduation Cap Icon">
+      <p>Continuous Learning: Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.</p>
     </div>
   </section>
 
   <div class="contact">
     <p>Let's connect!</p>
-    <a href="linkedin.com/in/mahmad90">LinkedIn</a>
-    <a href="https://github.com/mustaquim-ms">GitHub</a>
+    <a href="linkedin.com/in/mahmad90" target="_blank">LinkedIn</a>
+    <a href="https://github.com/mustaquim-ms" target="_blank">GitHub</a>
   </div>
 
   <div class="note">
     <p>Never stop learning, never stop growing.</p>
   </div>
-
-  <script src="https://kit.fontawesome.com/your_fontawesome_kit_id.js" crossorigin="anonymous"></script>
 </body>
 </html>
