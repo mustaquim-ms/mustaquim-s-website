@@ -9,6 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
+      background: linear-gradient(to right, #f06b6b, #f0966b);
     }
 
     .intro {
@@ -19,6 +20,7 @@
       margin-bottom: 15px;
       display: flex;
       align-items: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .expertise i, .solution i, .communication i, .learning i {
@@ -36,18 +38,37 @@
       text-decoration: none;
       color: #333;
       margin-right: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .contact a:hover {
+      transform: scale(1.1);
     }
 
     .note {
       margin-top: 30px;
       font-style: italic;
       text-align: center;
+      transform: rotate(-2deg);
+    }
+
+    .intro h1 {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
   <div class="intro">
-    <h1>Hi! This is <b>Mustaquim Ahmad.</b></h1>
+    <h1>Mustaquim Ahmad</h1>
     <p>Nice to meet you!</p>
   </div>
 
@@ -58,27 +79,23 @@
   <section>
     <h2>Skills & Expertise</h2>
     <div class="expertise">
-      <i class="fas fa-laptop-code"></i>i. Technical Expertise: Skilled at solving complex problems across hardware, software, and network infrastructure.
+      <i class="fas fa-laptop-code"></i> Technical Expertise: Skilled at solving complex problems across hardware, software, and network infrastructure.
     </div>
     <div class="solution">
-      <i class="fas fa-lightbulb"></i>ii. Solution Delivery: Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.
+      <i class="fas fa-lightbulb"></i> Solution Delivery: Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.
     </div>
     <div class="communication">
-      <i class="fas fa-handshake"></i>iii. Communication & Collaboration: Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.
+      <i class="fas fa-handshake"></i> Communication & Collaboration: Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.
     </div>
     <div class="learning">
-      <i class="fas fa-graduation-cap"></i>iv. Continuous Learning: Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.
+      <i class="fas fa-graduation-cap"></i> Continuous Learning: Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.
     </div>
   </section>
 
   <div class="contact">
     <p>Let's connect!</p>
-    <a href="linkedin.com/in/mahmad90">
-      <img src="https://img.icons8.com/?size=100&id=64154&format=png&color=000000" alt="LinkedIn Logo">
-    </a>
-    <a href="https://github.com/mustaquim-ms">
-      <img src="https://img.icons8.com/?size=100&id=118557&format=png&color=000000" alt="GitHub Logo">
-    </a>
+    <a href="linkedin.com/in/mahmad90">LinkedIn</a>
+    <a href="https://github.com/mustaquim-ms">GitHub</a>
   </div>
 
   <div class="note">
