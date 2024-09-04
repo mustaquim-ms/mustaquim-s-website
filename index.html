@@ -9,114 +9,87 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
-      background-size: cover;
-      background-attachment: fixed;
-      color: #fff;
+      background: linear-gradient(to right, #3498db, #66ffcc);
     }
 
     .intro {
       text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
-    .expertise, .solution, .communication, .learning {
-      margin-bottom: 20px;
+    .about-me {
+      margin-bottom: 40px;
+    }
+
+    .expertise, .solution-delivery, .communication, .learning {
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 10px;
     }
 
-    .expertise img, .solution img, .communication img, .learning img {
-      width: 60px;
-      height: 60px;
-      margin-right: 20px;
-    }
-
-    .expertise p, .solution p, .communication p, .learning p {
-      margin: 0;
-      font-size: 16px;
-    }
-
-    .contact {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .contact a {
-      text-decoration: none;
-      color: #fff;
+    .expertise i, .solution-delivery i, .communication i, .learning i  {
+      font-size: 2em;
       margin-right: 10px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.2);
-      transition: background-color 0.3s ease-in-out;
+      color: #3498db;
     }
 
-    .contact a:hover {
-      background-color: rgba(255, 255, 255, 0.4);
+    .links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .links img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
     }
 
     .note {
-      margin-top: 30px;
-      font-style: italic;
       text-align: center;
-      transform: rotate(-2deg);
-    }
-
-    .intro h1 {
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+      margin-top: 40px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-  <div class="intro">
-    <h1>Mustaquim Ahmad</h1>
-    <p>Nice to meet you!</p>
-  </div>
+  <h1 class="intro">Mustaquim's Page</h1>
 
-  <div class="about">
+  <div class="about-me">
+    <p>My name is Mustaquim Ahmad. Nice to meet you.</p>
+    <p>IT Engineer | IT Support | Google IT Support Professional Certificate</p>
     <p>Highly motivated and results-oriented IT professional with 10+ years of experience implementing technological innovation and strategic business development. Proven ability to excel in diverse roles, including leading support teams, managing complex projects, and developing new business opportunities.</p>
   </div>
 
-  <section>
-    <h2>Skills & Expertise</h2>
-    <div class="expertise">
-      <img src="https://cdn.pixabay.com/photo/2017/04/08/10/16/laptop-2161982_960_720.png" alt="Laptop Icon">
-      <p>Technical Expertise: Skilled at solving complex problems across hardware, software, and network infrastructure.</p>
-    </div>
-    <div class="solution">
-      <img src="https://cdn.pixabay.com/photo/2013/07/18/19/22/lightbulb-210584_960_720.png" alt="Lightbulb Icon">
-      <p>Solution Delivery: Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.</p>
-    </div>
-    <div class="communication">
-      <img src="https://cdn.pixabay.com/photo/2016/09/17/19/35/handshake-1678071_960_720.png" alt="Handshake Icon">
-      <p>Communication & Collaboration: Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.</p>
-    </div>
-    <div class="learning">
-      <img src="https://cdn.pixabay.com/photo/2015/07/17/14/57/graduation-cap-769231_960_720.png" alt="Graduation Cap Icon">
-      <p>Continuous Learning: Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.</p>
-    </div>
-  </section>
+  <h2 class="expertise">Technical Expertise:</h2>
+  <p class="expertise">
+    <i class="fas fa-laptop-code"></i> Skilled at solving complex problems across hardware, software, and network infrastructure.
+  </p>
 
-  <div class="contact">
-    <p>Let's connect!</p>
-    <a href="linkedin.com/in/mahmad90" target="_blank">LinkedIn</a>
-    <a href="https://github.com/mustaquim-ms" target="_blank">GitHub</a>
+  <h2 class="solution-delivery">Solution Delivery:</h2>
+  <p class="solution-delivery">
+    <i class="fas fa-lightbulb"></i> Specialize in developing user-centric solutions that improve productivity and streamline internal operations, leading successful projects that consistently deliver results and exceed expectations.
+  </p>
+
+  <h2 class="communication">Communication & Collaboration:</h2>
+  <p class="communication">
+    <i class="fas fa-handshake"></i> Possess exceptional communication and interpersonal skills, fostering strong relationships with stakeholders at all levels.
+  </p>
+
+  <h2 class="learning">Continuous Learning:</h2>
+  <p class="learning">
+    <i class="fas fa-graduation-cap"></i> Passionate about continuous learning and staying at the forefront of emerging technologies to deliver exceptional value and achieve superior results.
+  </p>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/mahmad90">
+      <img src="https://static.vecteezy.com/system/resources/previews/008/748/545/original/linkedin-social-media-icon-vector-illustration-design-template-eps-10-5452748.jpg" alt="LinkedIn Logo" onerror="this.src='https://cdn.worldvectorlogo.com/logos/linkedin-2.svg';">
+    </a>
+    <a href="https://github.com/mustaquim-ms">
+      <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub Logo" onerror="this.src='https://cdn.worldvectorlogo.com/logos/github-icon-2.svg';">
+    </a>
   </div>
 
-  <div class="note">
-    <p>Never stop learning, never stop growing.</p>
-  </div>
+  <p class="note">Let's connect and build something amazing together!</p>
 </body>
 </html>
